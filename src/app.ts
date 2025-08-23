@@ -58,9 +58,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
-      "https://cyberpeers.netlify.app",
-      "https://career.cyberpeers.co.uk"
-      
+      "https://unibridge.netlify.app",
     ],
     credentials: true,
   })
