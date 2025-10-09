@@ -8,23 +8,23 @@ import { EmailConfigControllers } from "./email-configs.controller";
 const router = express.Router();
 router.get(
   "/",
-  auth("admin", "agent", "staff"),
+  // auth("admin", "agent", "staff"),
   EmailConfigControllers.getAllEmailConfig
 );
 router.post(
   "/",
-  auth("admin", "agent", "staff"),
+  // auth("admin", "agent", "staff"),
   EmailConfigControllers.EmailConfigCreate
 );
 router.get(
   "/:id",
-  auth("admin", "agent", "staff"),
+  // auth("admin", "agent", "staff"),
   EmailConfigControllers.getSingleEmailConfig
 );
 
 router.patch(
   "/:id",
-  auth("admin", "agent", "staff"),
+  // auth("admin", "agent", "staff"),
   EmailConfigControllers.updateEmailConfig
 );
 
